@@ -1,9 +1,13 @@
 {
 	"$schema": "https://schemas.wp.org/wp/6.5/theme.json",
 	"version": 2,
-	"customTemplates": [
+	"customTemplates": 
+	[
+
 	],
-	"settings": {
+	"settings": 
+	{
+		
 	},
 	"styles": 
 	{
