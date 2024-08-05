@@ -5,15 +5,17 @@
 	 * @link https://developer.wordpress.org/themes/basics/theme-functions/
 	 *
 	 * @package WordPress
-	 * @subpackage Twenty_Twenty_Two
-	 * @since Twenty Twenty-Two 1.0
+	 * @subpackage DesignerMadsen_Theme
+	 * @since DesignerMadsen Theme 1.0
 	 */
 
+	$dm_support = 'designermadsen_support';
+	$dm_styles = 'designermadsen_styles';
 
-	if ( 
-			!function_exists( 
-				'twentytwentytwo_support' 
-			) 
+	if(
+		!function_exists( 
+			$dm_support 
+		) 
 	):
 		/**
 		 * Sets up theme defaults and registers support for various WordPress features.
@@ -22,7 +24,7 @@
 		 *
 		 * @return void
 		 */
-		function twentytwentytwo_support() 
+		function designermadsen_support() 
 		{
 			// Add support for block styles.
 			add_theme_support( 
@@ -39,12 +41,12 @@
 
 	add_action( 
 		'after_setup_theme', 
-		'twentytwentytwo_support' 
+		$dm_support 
 	);
 
 	if ( 
 		!function_exists( 
-			'twentytwentytwo_styles' 
+			$dm_styles 
 		) 
 	):
 
@@ -55,25 +57,30 @@
 		 *
 		 * @return void
 		 */
-		function twentytwentytwo_styles() 
+		function designermadsen_styles() 
 		{
+			$designermadsen_style = 'designermadsen-style';
+
 			// Register theme stylesheet.
 			$theme_version = wp_get_theme()->get( 
 				'Version' 
 			);
 
-			$version_string = is_string( $theme_version ) ? $theme_version : false;
+			$version_string = is_string( 
+				$theme_version 
+			) 
+			? 
+			$theme_version : false;
 			
 			wp_register_style(
-				'twentytwentytwo-style',
+				$designermadsen_style,
 				get_template_directory_uri() . '/style.css',
 				array(),
 				$version_string
 			);
 
-			// Enqueue theme stylesheet.
 			wp_enqueue_style( 
-				'twentytwentytwo-style' 
+				$designermadsen_style 
 			);
 		}
 
@@ -81,10 +88,9 @@
 
 	add_action( 
 		'wp_enqueue_scripts', 
-		'twentytwentytwo_styles' 
+		$dm_styles 
 	);
 
 	// Add block patterns
 	require get_template_directory() . '/inc/block-patterns.php';
-
 ?>
