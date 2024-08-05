@@ -1,0 +1,22 @@
+.on-mobile
+{
+    display: none;
+}
+
+.on-desktop
+{
+    display: block;
+}
+
+@media screen and ( max-width: 600px ) 
+{
+    .on-mobile
+    {
+        display: block;
+    }    
+
+    .on-desktop
+    {
+        display: none;
+    }
+}

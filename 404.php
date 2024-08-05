@@ -15,22 +15,20 @@
         ?>
         
         <main>
-            <div>
-                <h1>
-                    Ops.
-                </h1>
-                
-                <h2> 
-                    We're sorry, but the page is not found. 
-                </h2>
+            <div id="information-page">
+                <div id="page-404">
+                    <h1>
+                        Ops.
+                    </h1>
+                    
+                    <h2> 
+                        We're sorry, but the page is not found. 
+                    </h2>
 
-                <p>
-                    But we can't find what you're requesting.
-                </p>
-
-                <p>
-                    Message: 404 Error
-                </p>
+                    <p>
+                        Message: 404 Error
+                    </p>
+                </div>
             </div>
         </main>
         
