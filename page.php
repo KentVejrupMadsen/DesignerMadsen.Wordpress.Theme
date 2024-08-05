@@ -10,18 +10,17 @@
         ?>
     </head>
     <body>
-        <header>
-
-        </header>
+        <?php 
+            get_header();
+        ?>
         
         <main>
 
         </main>
         
-        <footer> 
-
-        </footer>
+        <?php
+            get_footer(); 
+            wp_footer(); 
+        ?>
     </body>
-    
-    <?php wp_footer(); ?>
 </html>
