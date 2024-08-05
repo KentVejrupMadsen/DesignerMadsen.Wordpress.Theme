@@ -94,7 +94,4 @@
 		'wp_enqueue_scripts', 
 		$dm_styles 
 	);
-
-	// Add block patterns
-	require get_template_directory() . '/inc/block-patterns.php';
 ?>
