@@ -70,8 +70,9 @@ function twentytwentytwo_register_block_patterns()
 		$block_patterns 
 	);
 
-	foreach ( $block_patterns as $block_pattern ) 
-	{
+	foreach( 
+		$block_patterns as $block_pattern 
+	){
 		$pattern_file = get_theme_file_path( 
 			'/inc/patterns/' . $block_pattern . '.php' 
 		);
