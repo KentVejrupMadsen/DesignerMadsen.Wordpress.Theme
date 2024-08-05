@@ -22,14 +22,7 @@
 			$dm_support 
 		) 
 	):
-		/**
-		 * Sets up theme defaults and registers support for various WordPress features.
-		 *
-		 * @since Twenty Twenty-Two 1.0
-		 *
-		 * @return void
-		 */
-		function designermadsen_support() 
+		function designermadsen_support(): void
 		{
 			// Add support for block styles.
 			add_theme_support( 
@@ -55,14 +48,7 @@
 		) 
 	):
 
-		/**
-		 * Enqueue styles.
-		 *
-		 * @since Twenty Twenty-Two 1.0
-		 *
-		 * @return void
-		 */
-		function designermadsen_styles() 
+		function designermadsen_styles(): void
 		{
 			$designermadsen_style = 'designermadsen-style';
 
@@ -79,7 +65,7 @@
 			
 			wp_register_style(
 				$designermadsen_style,
-				get_template_directory_uri() . '/style.css',
+				retrieve_style_url(),
 				array(),
 				$version_string
 			);
