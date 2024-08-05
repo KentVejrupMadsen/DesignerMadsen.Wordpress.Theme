@@ -7,6 +7,9 @@
 	 * @package WordPress
 	 * @subpackage DesignerMadsen_Theme
 	 * @since DesignerMadsen Theme 1.0
+	 * 
+	 *	License: MIT License
+	 *	License URI: 
 	 */
 
 	$dm_support = 'designermadsen_support';
