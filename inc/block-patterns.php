@@ -39,10 +39,12 @@ function twentytwentytwo_register_block_patterns()
 	);
 
 	foreach( 
-		$block_pattern_categories as $name => $properties 
+		$block_pattern_categories 
+			as $name 
+			=> $properties 
 	){
 		if( 
-			! WP_Block_Pattern_Categories_Registry::get_instance()
+			!WP_Block_Pattern_Categories_Registry::get_instance()
 				->is_registered( 
 					$name 
 				) 
