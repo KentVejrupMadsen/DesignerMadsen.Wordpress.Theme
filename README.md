@@ -1,1 +1,2 @@
-# DesignerMadsen.Wordpress.Theme
+# Wordpress Theme
+## DesignerMadsen Theme
