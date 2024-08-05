@@ -12,6 +12,7 @@
 	 *	License: MIT License
 	 *	License URI: https://github.com/KentVejrupMadsen/DesignerMadsen.Wordpress.Theme/blob/main/LICENSE.md
 	 */
+	require_once get_template_directory() . '/include/urls.php';
 
 	$dm_support = 'designermadsen_support';
 	$dm_styles = 'designermadsen_styles';
