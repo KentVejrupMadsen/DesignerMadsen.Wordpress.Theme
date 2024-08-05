@@ -1,6 +1,43 @@
-<?php
-// There is nothing output here because block themes do not use php templates.
-// There is a core ticket discussing removing this requirement for block themes:
-// https://core.trac.wordpress.org/ticket/54272.
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="
+            <?php 
+                bloginfo( 
+                    'charset' 
+                ); 
+            ?>"
+        >
+        <meta 
+            name="viewport" 
+            content="width=device-width, initial-scale=1.0"
+        >
+        
+        <title>
+            <?php 
+                wp_title( 
+                    '|', 
+                    true, 
+                    'right' 
+                ); 
+            ?>
+        </title>
+        
+        <?php 
+            wp_head(); 
+        ?>
+    </head>
+    <body>
+        <header>
+        </header>
+        
+        <main>
+        </main>
+        
+        <footer> 
 
-?>
+        </footer>
+    </body>
+    
+    <?php wp_footer(); ?>
+</html>
