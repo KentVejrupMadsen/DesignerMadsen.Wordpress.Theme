@@ -26,7 +26,7 @@
                     </h2>
 
                     <p>
-                        Message: 404 Error
+                        Error Message: 404 Not found.
                     </p>
                 </div>
             </div>
