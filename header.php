@@ -1,11 +1,17 @@
-<div class="on-mobile">
+<header 
+    class="on-mobile" 
+    id="on-mobile-header"
+>
     <?php 
         require_once retrieve_header_mobile_url();
     ?>
-</div>
+</header>
 
-<div class="on-desktop">
+<header 
+    class="on-desktop" 
+    id="on-desktop-header"
+>
     <?php 
         require_once retrieve_header_desktop_url();
     ?>
-</div>
+</header>

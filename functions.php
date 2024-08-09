@@ -13,6 +13,8 @@
 	 *	License URI: https://github.com/KentVejrupMadsen/DesignerMadsen.Wordpress.Theme/blob/main/LICENSE.md
 	 */
 	require_once get_template_directory() . '/include/urls.php';
+	require_once get_template_directory() . '/include/names.php';
+	
 
 	$dm_support = 'designermadsen_support';
 	$dm_styles = 'designermadsen_styles';
@@ -50,28 +52,29 @@
 
 		function designermadsen_styles(): void
 		{
-			$designermadsen_style = 'designermadsen-style';
 
 			// Register theme stylesheet.
 			$theme_version = wp_get_theme()->get( 
 				'Version' 
 			);
 
-			$version_string = is_string( 
-				$theme_version 
-			) 
-			? 
-			$theme_version : false;
+			$version_string = (
+				is_string( 
+					$theme_version 
+				) 
+				? 
+				$theme_version : false
+			);
 			
 			wp_register_style(
-				$designermadsen_style,
+				GetDesignermadsenStyle(),
 				retrieve_style_url(),
 				array(),
 				$version_string
 			);
 
 			wp_enqueue_style( 
-				$designermadsen_style 
+				GetDesignermadsenStyle()
 			);
 		}
 

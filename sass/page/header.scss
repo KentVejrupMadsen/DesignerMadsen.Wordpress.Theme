@@ -1,3 +1,30 @@
-header {
+header 
+{
     
+}
+
+#on-desktop-header 
+{
+    width: 100%;
+    display: grid;
+    
+    background-color: darkblue;
+    color: white;
+
+    grid-template-rows: auto;
+    grid-template-columns: auto auto auto;
+
+    padding-top: 1.6pc;
+    padding-bottom: 1.6pc;
+}
+
+#on-desktop-header div
+{
+    display: flex;
+}
+
+
+#on-mobile-header 
+{
+    border: 1px solid black;
 }
