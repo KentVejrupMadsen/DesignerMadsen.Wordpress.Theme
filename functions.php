@@ -15,6 +15,9 @@
 	require_once get_template_directory() . '/include/urls.php';
 	require_once get_template_directory() . '/include/names.php';
 
+	require_once get_template_directory() . '/include/interactive_menues.php';
+
+
 	if(
 		!function_exists( 
 			GetFunctionDesignermadsenSupport()
@@ -79,5 +82,10 @@
 	add_action( 
 		'wp_enqueue_scripts', 
 		GetDesignermadsenStyles()
+	);
+
+	add_action( 
+		'init', 
+		'RegistrationOfMenues' 
 	);
 ?>
