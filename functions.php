@@ -14,14 +14,10 @@
 	 */
 	require_once get_template_directory() . '/include/urls.php';
 	require_once get_template_directory() . '/include/names.php';
-	
-
-	$dm_support = 'designermadsen_support';
-	$dm_styles = 'designermadsen_styles';
 
 	if(
 		!function_exists( 
-			$dm_support 
+			GetFunctionDesignermadsenSupport()
 		) 
 	):
 		function designermadsen_support(): void
@@ -41,12 +37,12 @@
 
 	add_action( 
 		'after_setup_theme', 
-		$dm_support 
+		GetFunctionDesignermadsenSupport()
 	);
 
 	if ( 
 		!function_exists( 
-			$dm_styles 
+			GetDesignermadsenStyles()
 		) 
 	):
 
@@ -82,6 +78,6 @@
 
 	add_action( 
 		'wp_enqueue_scripts', 
-		$dm_styles 
+		GetDesignermadsenStyles()
 	);
 ?>
